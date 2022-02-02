@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ApplicationWindow</class>
+ <widget class="QMainWindow" name="ApplicationWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Micro Manipulation</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="VideoPlayer" name="videoPlayer" native="true">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>1024</width>
+      <height>768</height>
+     </rect>
+    </property>
+    <widget class="QComboBox" name="comboCameraSelect">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>111</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="maxVisibleItems">
+      <number>2</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>Camera1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Camera2</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="AutoButton" name="autoButton" native="true">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>350</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonPickSample">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>810</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pick a Sample</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonRetSample">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>810</y>
+      <width>181</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Return the Sample</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelJoystick">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>170</y>
+      <width>161</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Joystick not active</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelX">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>259</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>x position:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelY">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>290</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>y position:</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberX">
+    <property name="geometry">
+     <rect>
+      <x>1710</x>
+      <y>260</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumberY">
+    <property name="geometry">
+     <rect>
+      <x>1710</x>
+      <y>290</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelLogo">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>281</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Image</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>VideoPlayer</class>
+   <extends>QWidget</extends>
+   <header>frontend.VideoPlayer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AutoButton</class>
+   <extends>QWidget</extends>
+   <header>frontend.customWidgets</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

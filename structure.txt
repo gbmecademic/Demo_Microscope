@@ -1,0 +1,13 @@
+Structure of the microscope demo for SLAS 2022.
+
+Definition of the application:
+The demo is a micromanipulation demo. The robot picks a sample from a box of samples. It then brings it in front of the microscope and pass the control to the user.
+The user can then use a joystick to move the sample slowly in front of the microscope. The user can then push a button to return the sample to the tray.
+
+
+Objects:
+Main application
+Video player => thread
+Robot => mecademicpy
+Joystick => thread
+
